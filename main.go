@@ -1,9 +1,14 @@
 package main
 
 import (
-	"github.com/nahul133/goLand/variables"
+	"fmt"
+
+	"github.com/nahul133/goLand/funciones"
 )
 
 func main() {
-	variables.MostrarEnteros()
+	estado, texto := funciones.ConvertiraTexto(10)
+
+	fmt.Println(estado)
+	fmt.Println(texto)
 }
